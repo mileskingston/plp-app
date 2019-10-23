@@ -1,0 +1,10 @@
+.product-grid {
+  flex: 8;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media(min-width: $tablet-min) {
+    margin-left: 20px;    
+  }
+}

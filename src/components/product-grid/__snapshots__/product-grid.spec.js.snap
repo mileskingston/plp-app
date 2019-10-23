@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Grid Component renders component 1`] = `
+<div
+  className="product-grid"
+>
+  <div
+    className="product"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="Product"
+        className="product__image"
+        src="https://www.demo.salmon-gcp.com/image/url"
+      />
+      <h2
+        className="product__name"
+      >
+        Product
+      </h2>
+      <p
+        className="product__price"
+      >
+        $400.0
+      </p>
+    </a>
+  </div>
+  <div
+    className="product"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt="Product 2"
+        className="product__image"
+        src="https://www.demo.salmon-gcp.com/image-2/url"
+      />
+      <h2
+        className="product__name"
+      >
+        Product 2
+      </h2>
+      <p
+        className="product__price"
+      >
+        $200.0
+      </p>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Product Grid Component renders component when no products 1`] = `
+<div
+  className="product-grid"
+>
+  <p>
+    Sorry, no products
+  </p>
+</div>
+`;

@@ -1,0 +1,29 @@
+.filters {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  box-shadow: 0 0 8px $grey;
+
+  @media(min-width: $tablet-min) {
+    flex: 2;
+    margin-bottom: 0;
+  }
+
+  &__button {
+    background-color: $primary-color;
+    color: $white;
+
+    @media(min-width: $tablet-min) {
+      display: none;
+    }
+  }
+
+  &-facets--hidden {
+    display: none;
+
+    @media(min-width: $tablet-min) {
+      display: block;
+    }
+  }
+}

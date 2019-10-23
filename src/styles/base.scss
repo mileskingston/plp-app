@@ -1,0 +1,35 @@
+@import './_variables';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: $base-font-color;
+  font-family: $base-font;
+  font-size: $base-font-size;
+  line-height: 1.1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+.button {
+  width: 100%;
+  font-size: $base-font-size;
+  min-height: 34px;
+  border: 0;
+  cursor: pointer;
+}
+
+@import '../components/product-listing';
+@import '../components/product-grid/product-grid';
+@import '../components/product-grid/product';
+@import '../components/title';
+@import '../components/filters/filters';
+@import '../components/filters/facet';
+@import '../components/filters/facet-entry';

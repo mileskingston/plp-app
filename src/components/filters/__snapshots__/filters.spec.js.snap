@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filters Component renders component 1`] = `
+<div
+  className="filters"
+>
+  <button
+    className="button filters__button"
+    onClick={[Function]}
+    type="button"
+  >
+    Filters
+  </button>
+  <div
+    className="filters-facets filters-facets--hidden"
+  >
+    <div
+      className="facet"
+    >
+      <h3>
+        name 1
+      </h3>
+      <label
+        className="facet-entry"
+        ufor="entry label 1"
+      >
+        <input
+          className="facet-entry__input"
+          id="entry label 1"
+          name="entry label 1"
+          tabIndex="0"
+          type="checkbox"
+          value="entry 1"
+        />
+        <span
+          className="facet-entry__label"
+        >
+          entry label 1
+           
+          <span>
+            2
+          </span>
+        </span>
+      </label>
+      <label
+        className="facet-entry"
+        ufor="entry label 2"
+      >
+        <input
+          className="facet-entry__input"
+          id="entry label 2"
+          name="entry label 2"
+          tabIndex="0"
+          type="checkbox"
+          value="entry 2"
+        />
+        <span
+          className="facet-entry__label"
+        >
+          entry label 2
+           
+          <span>
+            1
+          </span>
+        </span>
+      </label>
+    </div>
+    <div
+      className="facet"
+    >
+      <h3>
+        name 2
+      </h3>
+      <label
+        className="facet-entry"
+        ufor="entry label 1"
+      >
+        <input
+          className="facet-entry__input"
+          id="entry label 1"
+          name="entry label 1"
+          tabIndex="0"
+          type="checkbox"
+          value="entry 1"
+        />
+        <span
+          className="facet-entry__label"
+        >
+          entry label 1
+           
+          <span>
+            2
+          </span>
+        </span>
+      </label>
+      <label
+        className="facet-entry"
+        ufor="entry label 2"
+      >
+        <input
+          className="facet-entry__input"
+          id="entry label 2"
+          name="entry label 2"
+          tabIndex="0"
+          type="checkbox"
+          value="entry 2"
+        />
+        <span
+          className="facet-entry__label"
+        >
+          entry label 2
+           
+          <span>
+            1
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component renders component 1`] = `
+<h1
+  className="title"
+>
+  Title
+   
+  <span
+    className="title__total"
+  >
+    3 Items
+  </span>
+</h1>
+`;
+
+exports[`Title Component renders component with no items label 1`] = `
+<h1
+  className="title"
+>
+  Title
+   
+</h1>
+`;

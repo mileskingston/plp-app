@@ -1,0 +1,235 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Listing Component renders component before data loaded 1`] = `
+<div
+  class="test-wrapper"
+>
+  <div
+    class="product-listing"
+  >
+    <p>
+      Loading...
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Product Listing Component renders component when an error 1`] = `
+<div
+  class="test-wrapper"
+>
+  <div
+    class="product-listing"
+  >
+    
+    <div
+      class="filters"
+    >
+      <button
+        class="button filters__button"
+        type="button"
+      >
+        Filters
+      </button>
+      <div
+        class="filters-facets filters-facets--hidden"
+      />
+    </div>
+    <div
+      class="product-grid"
+    >
+      <p>
+        Sorry, no products
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Product Listing Component renders component with data 1`] = `
+<div
+  class="test-wrapper"
+>
+  <div
+    class="product-listing"
+  >
+    <h1
+      class="title"
+    >
+      Tablets
+       
+      <span
+        class="title__total"
+      >
+        6 Items
+      </span>
+    </h1>
+    <div
+      class="filters"
+    >
+      <button
+        class="button filters__button"
+        type="button"
+      >
+        Filters
+      </button>
+      <div
+        class="filters-facets filters-facets--hidden"
+      >
+        <div
+          class="facet"
+        >
+          <h3>
+            Offer Price USD
+          </h3>
+          <label
+            class="facet-entry"
+            ufor="Name"
+          >
+            <input
+              class="facet-entry__input"
+              id="Name"
+              name="Name"
+              tabindex="0"
+              type="checkbox"
+              value="price_USD_Name"
+            />
+            <span
+              class="facet-entry__label"
+            >
+              Name
+               
+              <span>
+                2
+              </span>
+            </span>
+          </label>
+          <label
+            class="facet-entry"
+            ufor="Name2"
+          >
+            <input
+              class="facet-entry__input"
+              id="Name2"
+              name="Name2"
+              tabindex="0"
+              type="checkbox"
+              value="price_USD_Name2"
+            />
+            <span
+              class="facet-entry__label"
+            >
+              Name2
+               
+              <span>
+                2
+              </span>
+            </span>
+          </label>
+        </div>
+        <div
+          class="facet"
+        >
+          <h3>
+            Manufacturer Name
+          </h3>
+          <label
+            class="facet-entry"
+            ufor="Name"
+          >
+            <input
+              class="facet-entry__input"
+              id="Name"
+              name="Name"
+              tabindex="0"
+              type="checkbox"
+              value="mfName_ntk_cs_Name"
+            />
+            <span
+              class="facet-entry__label"
+            >
+              Name
+               
+              <span>
+                2
+              </span>
+            </span>
+          </label>
+          <label
+            class="facet-entry"
+            ufor="Name2"
+          >
+            <input
+              class="facet-entry__input"
+              id="Name2"
+              name="Name2"
+              tabindex="0"
+              type="checkbox"
+              value="mfName_ntk_cs_Name2"
+            />
+            <span
+              class="facet-entry__label"
+            >
+              Name2
+               
+              <span>
+                2
+              </span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="product-grid"
+    >
+      <div
+        class="product"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="item"
+            class="product__image"
+            src="https://www.demo.salmon-gcp.com/image/url"
+          />
+          <h2
+            class="product__name"
+          >
+            item
+          </h2>
+          <p
+            class="product__price"
+          >
+            $300.0
+          </p>
+        </a>
+      </div>
+      <div
+        class="product"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="item 2"
+            class="product__image"
+            src="https://www.demo.salmon-gcp.com/image-2/url"
+          />
+          <h2
+            class="product__name"
+          >
+            item 2
+          </h2>
+          <p
+            class="product__price"
+          >
+            $20.0
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

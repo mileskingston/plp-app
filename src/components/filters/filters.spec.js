@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow, mount } from 'enzyme';
 import Filters from './filters';
 
 describe('Filters Component', () => {
@@ -31,7 +31,13 @@ describe('Filters Component', () => {
   }];
 
   it('renders component', () => {
-    let component = renderer.create(<Filters facets={facets} />).toJSON();
+    let component = shallow(<Filters facets={facets} />);
+    expect(component).toMatchSnapshot();
+  });
+
+  it('renders component after selecting a facet', () => {
+    let component = mount(<Filters facets={facets} />);
+    component.find('.facet-entry__input').first().simulate('click');
     expect(component).toMatchSnapshot();
   });
 });

@@ -1,5 +1,6 @@
 $base-font: "Roboto", "Droid Sans", "Helvetica Neue", sans-serif !default;
 $base-font-size: 16px !default;
+$base-font-weight: 400;
 $base-font-color: #1A3547 !default;
 
 $primary-color: #ffa500 !default;
@@ -9,3 +10,9 @@ $grey-dark: #808080 !default;
 
 $mobile-min: 479px !default;
 $tablet-min: 767px !default;
+
+$font-size-s: 14px !default;
+$font-weight-thin: 300 !default;
+$font-weight-bold: 500 !default;
+
+$focus-outline: 1px dotted $grey !default;

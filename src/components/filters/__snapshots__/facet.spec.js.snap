@@ -3,18 +3,21 @@
 exports[`Facet Component renders component 1`] = `
 <div
   className="facet"
+  key="value 1"
 >
   <h3>
     name 1
   </h3>
   <label
     className="facet-entry"
-    ufor="entry label 1"
+    htmlFor="entry label 1"
+    key="0"
   >
     <input
       className="facet-entry__input"
       id="entry label 1"
       name="entry label 1"
+      onClick={[Function]}
       tabIndex="0"
       type="checkbox"
       value="entry 1"
@@ -31,12 +34,14 @@ exports[`Facet Component renders component 1`] = `
   </label>
   <label
     className="facet-entry"
-    ufor="entry label 2"
+    htmlFor="entry label 2"
+    key="1"
   >
     <input
       className="facet-entry__input"
       id="entry label 2"
       name="entry label 2"
+      onClick={[Function]}
       tabIndex="0"
       type="checkbox"
       value="entry 2"

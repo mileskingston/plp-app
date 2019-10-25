@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import Title from './title';
 
 describe('Title Component', () => {
@@ -9,12 +9,12 @@ describe('Title Component', () => {
   };
 
   it('renders component', () => {
-    let component = renderer.create(<Title {...props} />).toJSON();
+    let component = shallow(<Title {...props} />);
     expect(component).toMatchSnapshot();
   });
 
   it('renders component with no items label', () => {
-    let component = renderer.create(<Title {...props} totalItems={0} />).toJSON();
+    let component = shallow(<Title {...props} totalItems={0} />);
     expect(component).toMatchSnapshot();
   });
 });

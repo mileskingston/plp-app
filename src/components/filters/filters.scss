@@ -10,7 +10,12 @@
     margin-bottom: 0;
   }
 
+  h3 {
+    font-weight: $font-weight-bold;
+  }
+
   &__button {
+    width: 100%;
     background-color: $primary-color;
     color: $white;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import ProductGrid from './product-grid';
 
 describe('Product Grid Component', () => {
@@ -27,12 +27,12 @@ describe('Product Grid Component', () => {
   ];
 
   it('renders component', () => {
-    let component = renderer.create(<ProductGrid products={products} />).toJSON();
+    let component = shallow(<ProductGrid products={products} />);
     expect(component).toMatchSnapshot();
   });
 
   it('renders component when no products', () => {
-    let component = renderer.create(<ProductGrid products={[]} />).toJSON();
+    let component = shallow(<ProductGrid products={[]} />);
     expect(component).toMatchSnapshot();
   });
 });

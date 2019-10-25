@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import Product from './product';
 
 describe('Product Component', () => {
@@ -12,9 +12,9 @@ describe('Product Component', () => {
       }
     ]
   };
-
+  
   it('renders component', () => {
-    let component = renderer.create(<Product product={product} />).toJSON();
+    let component = shallow(<Product product={product} />);
     expect(component).toMatchSnapshot();
   });
 });

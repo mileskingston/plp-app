@@ -14,108 +14,287 @@ exports[`Filters Component renders component 1`] = `
   <div
     className="filters-facets filters-facets--hidden"
   >
-    <div
-      className="facet"
-    >
-      <h3>
-        name 1
-      </h3>
-      <label
-        className="facet-entry"
-        ufor="entry label 1"
-      >
-        <input
-          className="facet-entry__input"
-          id="entry label 1"
-          name="entry label 1"
-          tabIndex="0"
-          type="checkbox"
-          value="entry 1"
-        />
-        <span
-          className="facet-entry__label"
-        >
-          entry label 1
-           
-          <span>
-            2
-          </span>
-        </span>
-      </label>
-      <label
-        className="facet-entry"
-        ufor="entry label 2"
-      >
-        <input
-          className="facet-entry__input"
-          id="entry label 2"
-          name="entry label 2"
-          tabIndex="0"
-          type="checkbox"
-          value="entry 2"
-        />
-        <span
-          className="facet-entry__label"
-        >
-          entry label 2
-           
-          <span>
-            1
-          </span>
-        </span>
-      </label>
-    </div>
-    <div
-      className="facet"
-    >
-      <h3>
-        name 2
-      </h3>
-      <label
-        className="facet-entry"
-        ufor="entry label 1"
-      >
-        <input
-          className="facet-entry__input"
-          id="entry label 1"
-          name="entry label 1"
-          tabIndex="0"
-          type="checkbox"
-          value="entry 1"
-        />
-        <span
-          className="facet-entry__label"
-        >
-          entry label 1
-           
-          <span>
-            2
-          </span>
-        </span>
-      </label>
-      <label
-        className="facet-entry"
-        ufor="entry label 2"
-      >
-        <input
-          className="facet-entry__input"
-          id="entry label 2"
-          name="entry label 2"
-          tabIndex="0"
-          type="checkbox"
-          value="entry 2"
-        />
-        <span
-          className="facet-entry__label"
-        >
-          entry label 2
-           
-          <span>
-            1
-          </span>
-        </span>
-      </label>
-    </div>
+    <Facet
+      facet={
+        Object {
+          "entry": Array [
+            Object {
+              "count": 2,
+              "label": "entry label 1",
+              "value": "entry 1",
+            },
+            Object {
+              "count": 1,
+              "label": "entry label 2",
+              "value": "entry 2",
+            },
+          ],
+          "name": "name 1",
+          "value": "value 1",
+        }
+      }
+      key="0"
+      onClick={[Function]}
+    />
+    <Facet
+      facet={
+        Object {
+          "entry": Array [
+            Object {
+              "count": 2,
+              "label": "entry label 1",
+              "value": "entry 1",
+            },
+            Object {
+              "count": 1,
+              "label": "entry label 2",
+              "value": "entry 2",
+            },
+          ],
+          "name": "name 2",
+          "value": "value 2",
+        }
+      }
+      key="1"
+      onClick={[Function]}
+    />
   </div>
 </div>
+`;
+
+exports[`Filters Component renders component after selecting a facet 1`] = `
+<Filters
+  facets={
+    Array [
+      Object {
+        "entry": Array [
+          Object {
+            "count": 2,
+            "label": "entry label 1",
+            "value": "entry 1",
+          },
+          Object {
+            "count": 1,
+            "label": "entry label 2",
+            "value": "entry 2",
+          },
+        ],
+        "name": "name 1",
+        "value": "value 1",
+      },
+      Object {
+        "entry": Array [
+          Object {
+            "count": 2,
+            "label": "entry label 1",
+            "value": "entry 1",
+          },
+          Object {
+            "count": 1,
+            "label": "entry label 2",
+            "value": "entry 2",
+          },
+        ],
+        "name": "name 2",
+        "value": "value 2",
+      },
+    ]
+  }
+>
+  <div
+    className="filters"
+  >
+    <button
+      className="button filters__button"
+      onClick={[Function]}
+      type="button"
+    >
+      Filters
+    </button>
+    <div
+      className="filters-facets filters-facets--hidden"
+    >
+      <h3>
+        Selected Filters
+      </h3>
+      <div
+        className="facet-entry"
+        key="0"
+      >
+        entry label 1
+        <button
+          className="button facet-entry__button"
+          onClick={[Function]}
+          type="button"
+        >
+          X
+          <span
+            className="sr-only"
+          >
+            Remove 
+            entry label 1
+          </span>
+        </button>
+      </div>
+      <Facet
+        facet={
+          Object {
+            "entry": Array [
+              Object {
+                "count": 2,
+                "label": "entry label 1",
+                "value": "entry 1",
+              },
+              Object {
+                "count": 1,
+                "label": "entry label 2",
+                "value": "entry 2",
+              },
+            ],
+            "name": "name 1",
+            "value": "value 1",
+          }
+        }
+        key="0"
+        onClick={[Function]}
+      >
+        <div
+          className="facet"
+          key="value 1"
+        >
+          <h3>
+            name 1
+          </h3>
+          <label
+            className="facet-entry"
+            htmlFor="entry label 1"
+            key="0"
+          >
+            <input
+              className="facet-entry__input"
+              id="entry label 1"
+              name="entry label 1"
+              onClick={[Function]}
+              tabIndex="0"
+              type="checkbox"
+              value="entry 1"
+            />
+            <span
+              className="facet-entry__label"
+            >
+              entry label 1
+               
+              <span>
+                2
+              </span>
+            </span>
+          </label>
+          <label
+            className="facet-entry"
+            htmlFor="entry label 2"
+            key="1"
+          >
+            <input
+              className="facet-entry__input"
+              id="entry label 2"
+              name="entry label 2"
+              onClick={[Function]}
+              tabIndex="0"
+              type="checkbox"
+              value="entry 2"
+            />
+            <span
+              className="facet-entry__label"
+            >
+              entry label 2
+               
+              <span>
+                1
+              </span>
+            </span>
+          </label>
+        </div>
+      </Facet>
+      <Facet
+        facet={
+          Object {
+            "entry": Array [
+              Object {
+                "count": 2,
+                "label": "entry label 1",
+                "value": "entry 1",
+              },
+              Object {
+                "count": 1,
+                "label": "entry label 2",
+                "value": "entry 2",
+              },
+            ],
+            "name": "name 2",
+            "value": "value 2",
+          }
+        }
+        key="1"
+        onClick={[Function]}
+      >
+        <div
+          className="facet"
+          key="value 2"
+        >
+          <h3>
+            name 2
+          </h3>
+          <label
+            className="facet-entry"
+            htmlFor="entry label 1"
+            key="0"
+          >
+            <input
+              className="facet-entry__input"
+              id="entry label 1"
+              name="entry label 1"
+              onClick={[Function]}
+              tabIndex="0"
+              type="checkbox"
+              value="entry 1"
+            />
+            <span
+              className="facet-entry__label"
+            >
+              entry label 1
+               
+              <span>
+                2
+              </span>
+            </span>
+          </label>
+          <label
+            className="facet-entry"
+            htmlFor="entry label 2"
+            key="1"
+          >
+            <input
+              className="facet-entry__input"
+              id="entry label 2"
+              name="entry label 2"
+              onClick={[Function]}
+              tabIndex="0"
+              type="checkbox"
+              value="entry 2"
+            />
+            <span
+              className="facet-entry__label"
+            >
+              entry label 2
+               
+              <span>
+                1
+              </span>
+            </span>
+          </label>
+        </div>
+      </Facet>
+    </div>
+  </div>
+</Filters>
 `;

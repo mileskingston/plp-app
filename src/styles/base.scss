@@ -7,23 +7,35 @@
 body {
   margin: 0;
   color: $base-font-color;
-  font-family: $base-font;
-  font-size: $base-font-size;
-  line-height: 1.1;
+  font: $base-font-weight $base-font-size/1.1 $base-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3 {
-  font-weight: 300;
+  font-weight: $font-weight-thin;
+}
+
+button, input {
+  cursor: pointer;
 }
 
 .button {
-  width: 100%;
+  padding: 0;
   font-size: $base-font-size;
   min-height: 34px;
   border: 0;
-  cursor: pointer;
+}
+
+.sr-only {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; 
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 @import '../components/product-listing';
@@ -32,4 +44,3 @@ h1, h2, h3 {
 @import '../components/title';
 @import '../components/filters/filters';
 @import '../components/filters/facet';
-@import '../components/filters/facet-entry';

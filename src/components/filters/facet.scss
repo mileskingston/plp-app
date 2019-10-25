@@ -1,3 +1,31 @@
-.facet > h3 {
-  font-weight: 400;
+.facet-entry {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: $font-size-s;
+
+  &__input {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    
+    &:focus + .facet-entry__label {
+      outline: $focus-outline;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    width: 100%;
+
+    > span {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &__button {
+    min-height: auto;
+  }
 }

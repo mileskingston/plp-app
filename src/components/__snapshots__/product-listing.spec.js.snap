@@ -84,7 +84,7 @@ exports[`Product Listing Component renders component with data 1`] = `
           </h3>
           <label
             class="facet-entry"
-            ufor="Name"
+            for="Name"
           >
             <input
               class="facet-entry__input"
@@ -106,7 +106,7 @@ exports[`Product Listing Component renders component with data 1`] = `
           </label>
           <label
             class="facet-entry"
-            ufor="Name2"
+            for="Name2"
           >
             <input
               class="facet-entry__input"
@@ -135,7 +135,7 @@ exports[`Product Listing Component renders component with data 1`] = `
           </h3>
           <label
             class="facet-entry"
-            ufor="Name"
+            for="Name"
           >
             <input
               class="facet-entry__input"
@@ -157,7 +157,7 @@ exports[`Product Listing Component renders component with data 1`] = `
           </label>
           <label
             class="facet-entry"
-            ufor="Name2"
+            for="Name2"
           >
             <input
               class="facet-entry__input"

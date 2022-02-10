@@ -6,7 +6,7 @@
     "enzyme": "3.5.0",
     "enzyme-adapter-react-16": "1.12.1",
     "enzyme-to-json": "3.3.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.10.2",
     "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.10.2",
